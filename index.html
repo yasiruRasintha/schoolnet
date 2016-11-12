@@ -1,0 +1,107 @@
+
+<html>
+  
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<title>
+		code school
+	</title>
+
+</head>
+
+<body >
+<div class="jumbotron">
+<div class="container">
+  <h1>Welcome to code school</h1>
+  <p>Welcome to code school</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+</div>
+
+<form action="login.php" method="post" class="form-inline container">
+  <div class="form-group">
+   
+  <div class="form-group">
+    <label for="exampleInputEmail2">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" name="email" placeholder="email">
+  </div>
+   <label for="exampleInputName2">Password</label>
+    <input type="password" class="form-control" id="exampleInputName2" name="password" placeholder="password">
+  </div>
+  <input type="submit" class="btn btn-default" value="Sign-in" name="submit">
+</form>
+
+<hr>
+
+
+
+ <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Not a member yet? Register now! 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+       <form  action="register.php" method="post" class="form-horizontal container">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Full Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="name" id="inputEmail3" placeholder="Full Name" required >
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" name="email" id="inputEmail3" placeholder="Email" required >
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">phone-number</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control"  id="inputEmail3" name="phone-num" placeholder="phone-number" required >
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" name="password" placeholder="Password" required >
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" name="submit" class="btn btn-default" value="Sign-up">
+    </div>
+  </div>
+</form>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<footer class="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+</body>
+
+</html>
