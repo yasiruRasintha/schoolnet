@@ -34,7 +34,8 @@ $conn = getConnection();
 		<div class="log">
 		<?php
 		echo "Logged in as ".$_SESSION["email"];
-		echo "".$_SESSION["id"];
+		$id = $_SESSION["id"];
+
 
 		?>
 		</div>
@@ -46,7 +47,8 @@ $conn = getConnection();
 			      <h3>Your courses</h3>
 			      <ul>
 				<?php
-				$subjectArray=getCourseSubject($sql_query2,$conn);
+				$course_id = getCourseId($id, $conn);
+				$subjectArray=getCourseSubject($course_id,$conn);
 				$c = count($subjectArray);
 
 				for($i=0;$i<$c;$i++){

@@ -14,7 +14,7 @@
 
 <?php
 include "dbcon.php";
-//var_dump($_POST);
+var_dump($_POST);
 
 if ($_POST["submit"]=="Sign-up") {
 	$name=$_POST["name"];
@@ -24,6 +24,9 @@ if ($_POST["submit"]=="Sign-up") {
 	$phone=$_POST["phone-num"];
 
 	$password=$_POST["password"];
+
+	$course_id=$_POST["select"];
+
 
 	$hash=password_hash($password, PASSWORD_DEFAULT);
 	
@@ -35,7 +38,7 @@ $result=mysqli_query($conn,$search_email);
 
 echo mysqli_num_rows($result);
 if (mysqli_num_rows($result)==0) {
-	$sql = "INSERT INTO student (fullname,email,phoneNumber,password) VALUES ('$name','$email','$phone','$hash')";
+	$sql = "INSERT INTO student (fullname,email,phoneNumber,password,cid) VALUES ('$name','$email','$phone','$hash','$course_id')";
 
 		if(mysqli_query($conn, $sql)) {
 			?>
